@@ -128,6 +128,13 @@ namespace ASI.Basecode.WebApp.Controllers
             return View();
         }
 
+        [HttpGet]
+        [AllowAnonymous]
+        public IActionResult ForgotPass()
+        {
+            return View();
+        }
+
         public IActionResult Test()
         {
             var dataList = _userService.GetUserList(null);
